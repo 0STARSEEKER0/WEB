@@ -1,0 +1,60 @@
+@keyframes shadow {
+	from {text-shadow: 0 0 3px black;}
+	50% {text-shadow: 0 0 30px black;}
+	to {text-shadow: 0 0 3px black;}
+}
+
+li:before {
+	content: "\f0da"; /* добавляем иконку дом */
+	font-family: 'FontAwesome';
+	color: #aaaaaa;
+	margin-right: 10px; 
+}
+
+body{
+    font-family: 'ds_mosterregular';
+    background: url(../images/book.jpg);
+    background-repeat:repeat-y;
+    background-size: 100%;
+}
+
+a{
+	-o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    background: #786b59;
+    color: #ffe;
+	transition-property:all;
+	font-size: large;
+	animation: shadow  2s infinite ease-in-out;
+   } 
+
+.lnk {
+    
+}
+
+.lnk:focus {
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+ul{
+	display:flex;
+	align-items: stretch;
+	align-content: flex-end
+}
+
+.wrapper-dropdown-2:hover + .dropdown, .dropdown:hover{
+	-o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	display: block;
+}
+
+.dropdown{
+		display:none;
+}

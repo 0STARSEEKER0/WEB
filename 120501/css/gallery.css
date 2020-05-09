@@ -1,0 +1,41 @@
+.element-1{
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 4px groove gray;
+}
+
+.element-2{
+  -webkit-transform-origin:left;
+  -ms-transform-origin:left;
+  transform-origin:left;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 4px groove gray;
+}
+
+.element-3{
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 4px groove gray;
+}
+
+.element-1:hover, .element-2:hover, .element-3:hover{
+	-o-transform: scale(1.3, 1.3);
+	-ms-transform: scale(1.3, 1.3);
+	-moz-transform: scale(1.3, 1.3);
+	-webkit-transform: scale(1.3, 1.3);
+	transform: scale(1.3, 1.3);
+	box-shadow: 0 0 10px rgba(0,0,0,0.65);
+}
