@@ -1,0 +1,25 @@
+#div7{
+	display: inline-block;
+	border:1px solid black;
+	position: relative;
+	padding: 5px;
+	margin: 0;
+	width: 180px;
+	left: -10px;
+	font-size: 14px;
+	background-color: white;
+}
+.outT{
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
+	padding: 5px;
+}
+#divdiv{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+#spD,#spM,#spH,#spS{
+	font-weight: bold;
+}

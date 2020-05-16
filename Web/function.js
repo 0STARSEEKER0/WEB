@@ -9,6 +9,8 @@ function outArrayData (country){
 }
 
 function makeTableFromCountry (countries){
+	i=2;
+	
     tab="<table width=100%>";
     tab+="<tr><td bgcolor = #C0C0C0><h1 align=center>"+countries[0]+"-"+countries[1]+"</h1></td>";
 	tab+="<tr><td><table width = 75% align=center>";
@@ -21,19 +23,22 @@ function makeTableFromCountry (countries){
 	var gObj=countries[6].map(outArrayData);
 	tabl="<tr><td><table align=center>";
 	tabl+="<td valign = top>"+about[6]+"</td>";
-	tabl+="<td><ol>"
+	tabl+="<td>"
 	gObj.map(
-	   function(item){tabl+="<li>"+item;});
-	tabl+="</ol></td>";
+	   function(item){tabl+="<p>&#1010"+i+";"+item+"</p>"; i++;});
+	tabl+="</td>";
 	tabl+="</td></table>";
 	tab+=tabl;
+	
+	i=2;
+	
 	var gObj=countries[7].map(outArrayData);
 	tabl="<tr><td><table align=center>";
 	tabl+="<td valign = top>"+about[7]+"</td>";
-	tabl+="<td><ol>";
+	tabl+="<td>";
 	gObj.map(
-	   function(item){tabl+="<li>"+item;});
-	tabl+="</ol></td>";
+	   function(item){tabl+="<p>&#1010"+i+";"+item+"</p>"; i++;});
+	tabl+="</td>";
 	tabl+="</td></table>";
 	tab+=tabl;
 	
