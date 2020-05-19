@@ -35,33 +35,46 @@ function _transform(){
 	switch(tr){
 		case 0:
 			clock = document.getElementById("clock");
-			clock.className = "clock-change-translate";
-			setTimeout(function(){clock.className = "clock1";}, 2000);
+			var translateX = getRandomInt(-100);
+			var translateY = getRandomInt(-100);
+			clock.style.cssText="transform: translate("+translateX+"px,"+translateY+"px); transition-duration: 2s;";
+			setTimeout(function(){clock.style.cssText="";}, 2000);
 			break;
 		case 1:
 			clock = document.getElementById("clock");
-			clock.className = "clock-change-rotate";
-			setTimeout(function(){clock.className = "clock1";}, 2000);
+			var rotation = getRandomInt(359);
+			clock.style.cssText="transform: rotate("+rotation+"deg); transition-duration: 2s;";
+			setTimeout(function(){clock.style.cssText="";}, 2000);
 			break;
 		case 2:
 			clock = document.getElementById("clock");
-			clock.className = "clock-change-scale";
-			setTimeout(function(){clock.className = "clock1";}, 2000);
+			var skew_angle = getRandomInt(70)-35;
+			clock.style.cssText="transform: skewX("+skew_angle+"deg); transition-duration: 2s;";
+			setTimeout(function(){clock.style.cssText="";}, 2000);
 			break;
 		case 3:
 			clock = document.getElementById("clock");
-			clock.className = "clock-change-skewX";
-			setTimeout(function(){clock.className = "clock1";}, 2000);
+			var skew_angle = getRandomInt(70)-35;
+			clock.style.cssText="transform: skewY("+skew_angle+"deg); transition-duration: 2s;";
+			setTimeout(function(){clock.style.cssText="";}, 2000);
 			break;
 		case 4:
 			clock = document.getElementById("clock");
-			clock.className = "clock-change-skewY";
-			setTimeout(function(){clock.className = "clock1";}, 2000);
+			var scaleX = Math.random();
+			var scaleY = Math.random();
+			clock.style.cssText="transform: scale("+scaleX+","+scaleY+"); transition-duration: 2s;";
+			setTimeout(function(){clock.style.cssText="";}, 2000);
 			break;
 		case 5:
 			clock = document.getElementById("clock");
-			clock.className = "clock-change-matrix";
-			setTimeout(function(){clock.className = "clock1";}, 2000);
+			var scaleX = Math.random();
+			var skew_angleX = Math.random();
+			var skew_angleY = Math.random();
+			var scaleY = Math.random();
+			var translateX = getRandomInt(-100);
+			var translateY = getRandomInt(-100);
+			clock.style.cssText="transform: matrix("+scaleX+","+skew_angleX+","+skew_angleY+","+scaleY+","+translateX+","+translateY+"); transition-duration: 2s;";
+			setTimeout(function(){clock.style.cssText="";}, 2000);
 			break;
 	}
 	
