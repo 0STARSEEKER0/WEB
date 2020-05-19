@@ -92,6 +92,62 @@
 		}           
 	}
 
+	#clock{
+		display: inline-block;
+		border:1px solid black;
+		padding: 5px;
+		margin: 0;
+		width: 75px;
+		font-size: 14px;
+		background-color: white;
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		padding: 1px;
+	}
+	.outT{
+		display: inline-block;
+		flex-flow: column wrap;
+		text-align: center;
+		padding: 1px;
+	}
+	#divdiv{
+		display: flex;
+		flex-flow: row wrap;
+		text-align: center;
+	}
+	#Hours,#Minutes,#Seconds{
+		font-weight: bold;
+	}
+	
+	.clock-change-translate{
+		-webkit-transform: translate(-50px, -100px);
+		-webkit-transition-duration: 2s;
+	}
+	
+	.clock-change-rotate{
+		-webkit-transform: rotate(20deg);
+		-webkit-transition-duration: 2s;
+	}
+	
+	.clock-change-scale{
+		-webkit-transform: scale(2, 3);
+		-webkit-transition-duration: 2s;
+	}
+	
+	.clock-change-skewX{
+		-webkit-transform: skewX(20deg);
+		-webkit-transition-duration: 2s;
+	}
+	
+	.clock-change-skewY{
+		-webkit-transform: skew(20deg, 10deg);
+		-webkit-transition-duration: 2s;
+	}
+	.clock-change-matrix{
+		-webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+		-webkit-transition-duration: 2s;
+	}
 }
 @media print {
 	BODY {
